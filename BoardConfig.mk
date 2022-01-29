@@ -120,3 +120,18 @@ TARGET_USES_LOGD := true
 BOARD_AVB_RECOVERY_ADD_HASH_FOOTER_ARGS += \
 	--prop com.android.build.boot.os_version:$(PLATFORM_VERSION) \
 	--prop com.android.build.boot.security_patch:$(PLATFORM_SECURITY_PATCH)
+
+#SHRP Flags
+SHRP_DEVICE_CODE := garden
+
+SHRP_PATH := device/xiaomi/$(SHRP_DEVICE_CODE)
+SHRP_MAINTAINER := iskandarasri03
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A_Only
+SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
+SHRP_EDL_MODE := 1
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_DARK := true
